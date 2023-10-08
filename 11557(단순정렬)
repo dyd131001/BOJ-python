@@ -1,0 +1,11 @@
+
+t = int(input())
+
+for count in range(t):
+    n = int(input())
+    S = []
+    for count2 in range(n):
+        x, y = map(str, input().split())
+        S.append([x, int(y)])
+    re = sorted(S, key=lambda x: x[1])
+    print(re[-1][0])
